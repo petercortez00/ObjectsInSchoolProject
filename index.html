@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects in School</title>
+    <script src="objects.js"></script>
+    <script src="data.js"></script>
+    <script src="actions.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+</head>
+<body>
+
+<h1>Some Objects</h1>
+
+<!--<input type="search" id="input" onkeyup="searchStudents()" placeholder="Search for names..">-->
+<!--<button  id="myInput" onclick= "searchStudents();" >Find a person</button>-->
+<!--<div id="foundStudent"></div>-->
+
+<hr>
+<select id="list">
+    <option value="0">Students</option>
+    <option value="1">Teachers</option>
+    <option value="2">Sections</option>
+</select>
+
+
+<button id="myButton" onclick=" listObjects()">Show a thing</button>
+<br><B>For students </B>
+<p>First Name</p>
+<input id="firstName" placeholder="First name">
+<p>Last Name</p>
+<input id="lastName" placeholder="Last name">
+<p>Grade Level</p>
+<input id="grade" placeholder="ex: 12">
+<br> <button id="Button" onclick= "addStudent(); listObjects();selectListStudents()" >Add those students!</button>
+<div id="studentSection"></div>
+
+
+<div id="output" ></div>
+
+
+<hr>
+
+<br><b>For Teachers </b>
+
+<p>Subject</p>
+<input id="TeacherF" placeholder="First Name">
+<input id="TeacherL" placeholder="Last Name">
+<input id="subject" placeholder="Ex: Math 1">
+<br><button id="TButton" onclick="addTeacher(); listObjects(); selectListTeachers()">Add those teachers!</button></br>
+<div id="teacherSection"></div>
+
+<div id="outputTeacher" ></div>
+
+<hr>
+<br><b>For Section </b>
+
+<p>Section</p>
+<input id="section" placeholder="Section name">
+<p>Section size</p>
+<input id="sectionSize" placeholder="Section size">
+<button id="SButton" onclick="addSection();listObjects(); selectListSection()">Add that section!</button>
+<div id="sectionAdded"></div>
+
+
+<div id="outputSection" ></div>
+
+<hr>
+<select id="students">
+    <script>
+        selectListStudents();
+    </script>
+</select>
+
+<select id="sectionName">
+    <script>
+        selectListSection();
+    </script>
+</select>
+<button id="StudentSectionButton" onclick="addStudentToSection()">Add student to section</button>
+
+<div id="studentsInSection"></div>
+
+<br><select id="teachers">
+    <script>
+        selectListTeachers();
+    </script>
+</select>
+
+<select id="sectionName2">
+    <script>
+        selectListSection();
+    </script>
+</select>
+<button id="TeacherSectionButton" onclick="addTeacherToSection()">Add teacher to section</button>
+
+
+<div id="teachersInSection"></div>
+
+
+<hr>
+
+<select id="sectionName3">
+    <script>
+        selectListSection();
+    </script>
+
+</select>
+
+<button id="showStudentsInSection" onclick="showStudentsInSection();">Show students in Section</button>
+<button id="showTeachersInSection" onclick="showTeachersInSection();">Show teachers in Section</button>
+<!--<form>-->
+    <!--<button id="reset" onclick="reset();">Reset</button>-->
+<!--</form>-->
+<div id="showPeople"></div>
+<!--<div id="showTeachers"></div>-->
+
+
+
+
+</body>
+</html>

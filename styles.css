@@ -1,0 +1,44 @@
+body{
+    background-image: url("images/background.png");
+    color: aliceblue;
+
+}
+
+#myButton{
+    text-align: center;
+     position: relative;
+ }
+h2{
+    text-align: center;
+    font-family: Dialog;
+    font-size: 50px;
+    color: aliceblue;
+
+}
+p {
+    text-align: left;
+    text-weight: bold;
+    position: relative;
+    color: aliceblue;
+}
+h1 {
+    text-align: center;
+    font-family: "Abadi MT Condensed Extra Bold";
+    font-size: 60px;
+    color: aliceblue;
+}
+input{
+    border: double;
+}
+
+#firstName, #lastName, #grade,#subject,#section, #sectionSize{
+    position: relative;
+
+}
+#Button, #SButton, #TButton{
+    position: relative;
+}
+#output{
+    align-content: center;
+}
+
